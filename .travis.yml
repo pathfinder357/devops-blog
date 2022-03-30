@@ -1,3 +1,8 @@
-language: go
-go:
-  - 1.11.x
+deploy:
+  provider: pages
+  skip_cleanup: true
+  GitHub_token: $GITHUB_TOKEN
+  local_dir: public
+  on:
+    branch: master
+  
